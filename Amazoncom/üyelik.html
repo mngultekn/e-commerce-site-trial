@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Giriş Yap</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #f0f2f5;
+      }
+
+      .wrapper {
+        max-width: 400px;
+        width: 90%;
+        margin: 50px auto;
+        background: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .title {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 24px;
+        color: #333;
+      }
+
+      .social_media {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .social_media .item {
+        width: 40px;
+        height: 40px;
+        border: 2px solid #ccc;
+        border-radius: 50%;
+        margin: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+      }
+
+      .social_media .item:hover {
+        border-color: #f90;
+      }
+
+      .form .input_field {
+        position: relative;
+        margin-bottom: 20px;
+      }
+
+      .form .input_field .input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background: #f9f9f9;
+      }
+
+      .form .btn {
+        width: 100%;
+        background: #f90;
+        padding: 12px;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: back-ground 0.3s ease;
+      }
+
+      .form .btn a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .form .btn:hover {
+        background: #f80;
+      }
+
+      .form .input_field i {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        color: #666;
+      }
+
+      ::-webkit-input-placeholder {
+        color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">Amazon.com</div>
+      <div class="social_media">
+        <div class="item">
+          <a href="https://www.instagram.com/amazon/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <div class="item">
+          <a href="https://x.com/amazon" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="form">
+        <div class="input_field">
+          <input type="text" placeholder="Adınız" class="input" />
+        </div>
+        <div class="input_field">
+          <input type="email" placeholder="E-posta" class="input" />
+        </div>
+        <div class="input_field">
+          <input type="password" placeholder="Şifre" class="input" />
+        </div>
+        <div class="btn">
+          <a href="#">Kayıt Ol</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

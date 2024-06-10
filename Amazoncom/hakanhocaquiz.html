@@ -1,0 +1,258 @@
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon.com</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <style>
+      input[type="text"] {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url("searchicon.png");
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        transition: width 0.4s ease-in-out;
+      }
+
+      input[type="text"]:focus {
+        width: 100%;
+      }
+      .verticaldiv {
+        position: relative;
+      }
+      .verticaldiv ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+      }
+
+      .verticaldiv li a {
+        display: block;
+        color: #000;
+        padding: 16px 16px;
+        text-decoration: none;
+      }
+
+      .verticaldiv li a:hover {
+        background-color: #555;
+        color: white;
+      }
+      .card-group {
+        width: 100%;
+        height: auto;
+      }
+      .ürünlink {
+        color: black;
+      }
+      .ürünlink:hover {
+        color: rgb(172, 146, 0);
+      }
+      .nav-link:hover {
+        color: aqua;
+      }
+      .dropbtn {
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/* .dropdown:hover .dropbtn {background-color: ;} */
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#" style="color: #000">
+          <img src="/Amazon_icon.png" alt="" style="width: 50px" /> Amazon.com
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="/hakanhocaquiz.html">Anasayfa</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Ürün Arama..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Ara
+            </button>
+          </form>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/üyelik.html">Üye Girişi</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br />
+    <div style="display: flex">
+      <div class="verticaldiv" style="display: inline">
+        <ul>
+          <li><a href="/Amazon_icon.png">Home</a></li>
+          <li>
+            <div class="dropdown">
+            <button class="dropbtn">Kategoriler</button>
+            <div class="dropdown-content">
+              <a href="https://www.amazon.com.tr/b?node=12466553031">Giyim</a>
+              <a href="https://www.amazon.com.tr/b?node=12466496031">Elektronik</a>
+              <a href="https://www.amazon.com.tr/b?node=12466781031">Ev ve Mutfak</a>
+            </div>
+          </li>
+          <li><a href="https://www.amazon.com.tr/gp/bestsellers/?ref_=nav_em_cs_bestsellers_0_1_1_2">Çok Satanlar</a></li>
+          <li><a href="https://www.amazon.com.tr/gp/movers-and-shakers/?ref_=nav_em_ms_0_1_1_4">En Yüksek Puanlılar</a></li>
+        </ul>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <img src="/klavye.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <a
+              href="https://www.amazon.com.tr/Logitech-Pebble-Özellikli-Bluetooth-Türkçe/dp/B07W6JJ257/ref=sr_1_7?__mk_tr_TR=ÅMÅŽÕÑ&crid=24KYKIC62AN6&dib=eyJ2IjoiMSJ9.10E0vvMuflc0PA1jyZJcwDkvGUtfTESH-53ElZyRAcOlKAzP3gAgmVfcnaXHqPfFhy6AtG1273fpBVIir0aPTBCyO1MtrzIQyXXzWwtvnX_-1vFbaQ3dt2YUGofR5HYMgVJiwYCMSwJGd6FTKoGLWV1a4agHkiWBJ4M4MQCnwIVUR9MjGrjoCIKFgvHINF3UjsSZ8uugdTVDjZPCkA3kyhlVAb833sWhqtt-4ptUuZTKmvU1wN-H9bim9GhPugoDB4umx9QBHyB3uF7foHDt6a9hNSjfkBsmo_U_7YBVS7I._WVuX76iBrrJVGORzJE5k7K4DD9t8mL1BldFPKpq9CY&dib_tag=se&keywords=klavye+logitech&qid=1717954468&sprefix=klavye+logitec%2Caps%2C186&sr=8-7"
+              class="ürünlink"
+              ><h5 class="card-title">Logitech Keyboard</h5></a
+            >
+            <a href="#"> <h3>99,90$</h3></a>
+            <p class="card-text">
+              Logitech Pebble Keys 2 K380s Kablosuz Klavye, Çoklu Cihaz
+              Özellikli, Kişiselleştirilebilir Kısa Yollar, Bluetooth,
+              Taşınabilir, Windows, macOS, iPadOS, Android, Chrome OS,
+              Easy-Switch, Türkçe Q, Siyah.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/mouse.webp" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <a
+              href="https://www.amazon.com.tr/ATTACK-SHARK-SUPERLIGHT-Kablosuz-Ayarlanabilir/dp/B0CF11ZVFS/ref=sr_1_16?adgrpid=118339729645&dib=eyJ2IjoiMSJ9.ohipZtEOB9eXwPm5eg0_WrZci70WDWxg_-Yq-rVj1KDj5vz6G4d3RF_G0BnPQX0OlTHkD2asmGVlkNFPg77wUy9ZGrFcFDZuBaqdwr8KPB68YUtj-ru_8Wl_qOnOEmJbbwcuiyyT3j6KkjbwSVTkSVJlE-LntdrY2ckOkKiyll479cZnXHIIaxzttCEzz9oknBJiGLoPI-PXumc8dSZejzAEjjHyxzHIVFuopaT3O6rWhAtCohxlMzT3IY6IBaOCLi-yENdZelvWDaBJ0k4Qa-ej2lS_oifdvUCU6VxSpkQ.LwNPMCh2e-oeHkTWqFMGrd70T0JkNhWi_1vYgum_Hls&dib_tag=se&hvadid=599798404226&hvdev=c&hvlocphy=1012776&hvnetw=g&hvqmt=e&hvrand=4596196970363217989&hvtargid=kwd-12213701&hydadcr=692_2602382&keywords=mouse&qid=1717945867&sr=8-16&th=1"
+              class="ürünlink"
+              ><h5 class="card-title">ATTACK SHARK X3 Mouse</h5></a
+            >
+            <a href="#"> <h3>49,90$</h3></a>
+            <p class="card-text">
+              ATTACK SHARK X3 49g SUPERLIGHT Bantlı Fare, PixArt PAW3395 Oyun
+              Sensörü, BT/2.4G Kablosuz/Kablolu Oyun Faresi, 6 Ayarlanabilir DPI
+              26000, 200 Saat Pil, Win11/Xbox/PS/Mac için Ofis Faresi (Beyaz)
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/sogutucu.webp" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <a
+              href="https://www.amazon.com.tr/Rampage-AD-RC34-Tutuculu-Notebook-Soğutucu/dp/B09P462KSW/ref=sr_1_14?crid=2RFHL461SPMID&dib=eyJ2IjoiMSJ9.rcKxQNlohO7a60_asDjadZAiNdENmXJ-KLNrjTeH7Wv4bdrr-W2ZVa1noX92tIruaofOKgcfNuOr1U0m2vckOCPSgIWf6biiW8CX5DbDJ0EdcmGFHyCGbtL95ZA3SLa_FolQmjVQDH1_HoW3qUjSVbIbn_iwf3PJ9IWvyoHqvT6MBcHbb3ikIuGDycy_nzyPwYlRiw7TR1LlM95Wg1UBh45SethZs58thgGchz74yHl5jsKEN8BTKvobqK3kmbVjMO7ACLavTaVKas5sY-amre-86UU8ayQyPSlZVudnuS4.rGft6JKoXQdOmokPt8wSySMi9Xu5JDtj4K_XIiRUiCE&dib_tag=se&keywords=bilgisayar+soğutucu&qid=1717954303&sprefix=bilgisa%2Caps%2C249&sr=8-14"
+              class="ürünlink"
+              ><h5 class="card-title">Rampage AD-RC34 Notebook Soğutucu</h5></a
+            >
+            <a href="#"> <h3>59,90$</h3></a>
+            <p class="card-text">
+              Rampage AD-RC34 Metafor Rgb 6 Fanlı Telefon Tutuculu Rgb Işıklı
+              15-17 Notebook Soğutucu Stand
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/stand.webp" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <a
+              href="https://www.amazon.com.tr/Taşınabilir-Bilgisayar-Notebook-Laptoplarla-Stantları/dp/B0BHHTZD6R/ref=sr_1_5?crid=23P3W46JRRULY&dib=eyJ2IjoiMSJ9.oWs98LS3VPVUqbexiVBi_LEFhcyVg170IKec17xLJlzhPEMehiNCOaXhNLBFdYGiFnZ_tAvquWRafy45gVNqOhhaYlQ0NubMziOpHYdTJqnpWJUvsoxk8VIwmignLH26MOr9d4lgkKdku1ex0nCl1N_PiJ0bPB-ohIG6lgM4ebZQTN2IJ5K6oG3Ip-rG0JLB4m53Sg7NpPY_8OXr_2X23eAEOCkoxwR4loSWZh7GktSoaZxgaW3Wbrk5bCk_LssCfhxNPcMfFT8N85pVAyzJYC9uuZFj2yfcZuLbso_qV8g.TEgVLcYlMYs2L9M9KGPVRYmLh_xNd509vh8bw1NKBnQ&dib_tag=se&keywords=bilgisayar+standı&qid=1717946410&sprefix=bilgisayar+s%2Caps%2C174&sr=8-5"
+              class="ürünlink"
+              ><h5 class="card-title">Taşınabilir Laptop Standı</h5></a
+            >
+            <a href="#"> <h3>9,90$</h3></a>
+            <p class="card-text">
+              Taşınabilir Laptop Stant Bilgisayar Stant Notebook Stant Tüm
+              Laptoplarla Uyumlu Bilgisayar Standı Taşınabilir Metal Kaymaz
+              Stant Dizüstü Bilgisayar Stantları Stantı
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
